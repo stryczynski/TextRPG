@@ -2,7 +2,6 @@ public class Player {
     private String name;
     private int hp;
     private int gold;
-
     private int level;
     private int xp;
     private double attack;
@@ -82,4 +81,5 @@ public class Player {
     public void attackEnemy(Enemy enemy) {
         enemy.takeDamage(this.attack);
     }
+
 }
