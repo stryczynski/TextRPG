@@ -28,7 +28,7 @@ public class Enemy {
     }
 
     public Enemy(String name, int hp, int attack) {
-        this.name = "Przeciwnik";
+        this.name = "Enemy";
         this.hp = hp;
         this.attack = attack;
     }
@@ -44,6 +44,7 @@ public class Enemy {
     public void isDead() {
         if (this.hp <= 0) {
             System.out.println(this.name + " has been defeated!");
+            System.out.println();
         }
     }
 }

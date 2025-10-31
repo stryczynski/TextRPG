@@ -19,6 +19,7 @@ public class Shop {
     public void buyItem(Player player, int itemIndex) {
         if (itemIndex < 0 || itemIndex >= items.size()) {
             System.out.println("Invalid item selection.");
+            System.out.println();
             return;
         }
 
@@ -35,8 +36,10 @@ public class Shop {
             }
 
             System.out.println("You bought " + itemName + "! You have " + player.getGold() + " gold left.");
+            System.out.println();
         } else {
             System.out.println("You don't have enough gold to buy " + itemName + ".");
+            System.out.println();
         }
     }
 }

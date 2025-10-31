@@ -68,6 +68,7 @@ public class Player {
     }
 
     public void levelUp() {
+        System.out.println("Congratulations! You've reached level " + (this.level + 1) + "!");
         this.level += 1;
         this.hp += 10;
         this.attack += 2.5;
