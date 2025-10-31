@@ -2,6 +2,7 @@ public class Player {
     private String name;
     private int hp;
     private int gold;
+
     private int level;
     private int xp;
     private double attack;
@@ -54,5 +55,31 @@ public class Player {
         this.name = name;
     }
 
+    public Player(String name, int hp, int gold, int level, int xp, double attack) {
+        this.name = name;
+        this.hp = hp;
+        this.gold = gold;
+        this.level = level;
+        this.xp = xp;
+        this.attack = attack;
+    }
 
+    public void heal(int amount) {
+        this.hp += amount;
+    }
+
+    public void levelUp() {
+        this.level += 1;
+        this.hp += 10;
+        this.attack += 2.5;
+        this.xp = 0;
+    }
+
+    public void takeDamage(int damage) {
+        this.hp -= damage;
+    }
+
+    public void attackEnemy(Enemy enemy) {
+        enemy.takeDamage(this.attack);
+    }
 }
