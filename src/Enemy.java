@@ -28,7 +28,7 @@ public class Enemy {
     }
 
     public Enemy(String name, int hp, int attack) {
-        this.name = name;
+        this.name = "Przeciwnik";
         this.hp = hp;
         this.attack = attack;
     }
